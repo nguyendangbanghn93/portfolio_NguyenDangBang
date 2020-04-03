@@ -1,0 +1,299 @@
+$c1: #fca492;
+$c2: #ffffff;
+$c3: #747373;
+$c4: #666666;
+$c5: rgba(250, 232, 232, 0.822);
+$c6: rgba(0, 0, 0, 0.479);
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #3d3d3d;
+}
+
+// color
+.c-c1 {
+    color: $c1;
+}
+
+.c-c2 {
+    color: $c2 !important;
+}
+
+.c-c3 {
+    color: $c3;
+}
+
+.box-hiênRa1 {
+    overflow: hidden;
+    &:hover .hiênRa1 {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.hiênRa1 {
+    margin-top: -100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.c-c4 {
+    color: $c4;
+}
+
+.bg-c1 {
+    background: $c1;
+}
+
+.bg-c2 {
+    background: $c2;
+}
+
+.bg-c3 {
+    background: $c3;
+}
+
+.bg-c4 {
+    background: $c4;
+}
+
+.bg-c5 {
+    background: $c5;
+}
+
+.bg-c6 {
+    background: $c6;
+}
+
+.bc-c1 {
+    border-color: $c1 !important;
+}
+
+.bc-c3 {
+    border-color: $c3 !important;
+}
+
+.hac-c4 {
+    transition: .5s;
+    &:hover {
+        color: $c4 !important;
+        border-color: $c4 !important;
+    }
+}
+
+.hac-c1 {
+    transition: .5s;
+    &:hover {
+        color: $c1 !important;
+        border-color: $c1 !important;
+    }
+}
+
+.bb-c1 {
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -20px;
+        left: 0;
+        width: 150px;
+        height: 3px;
+        background: $c1;
+    }
+}
+
+.a-c1 {
+    color: unset;
+    &:hover {
+        text-decoration: none;
+        color: $c1 !important;
+    }
+}
+
+.a-c2 {
+    color: unset;
+    &:hover {
+        text-decoration: none;
+        color: $c2 !important;
+    }
+}
+
+.a-c4 {
+    color: unset;
+    &:hover {
+        text-decoration: none;
+        color: $c4 !important;
+    }
+}
+
+// thuộc tính
+.mt100 {
+    margin-top: 100%;
+    transition: .5s;
+}
+
+.mt-100 {
+    margin-top: -100%;
+    opacity: 0;
+}
+
+.m0h {
+    &:hover .mt100 {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+.c-p {
+    cursor: pointer !important;
+}
+
+.o0 {
+    transition: .5s;
+}
+
+.lstn {
+    list-style-type: none !important;
+}
+
+.tol10 {
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.tol1 {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.tol3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
+.ontop {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    cursor: pointer;
+}
+
+.bg-img1 {
+    background-image: url('../image/1.jpg');
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bsm {
+    box-shadow: 0px 0px 11px 1px rgba(24, 24, 24, 0.753);
+}
+
+.a-a1-rlg {
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $c2;
+        opacity: 0;
+        transition: .5s;
+    }
+    &:hover::after {
+        opacity: 1 !important;
+    }
+}
+
+.active-rlg {
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $c2;
+        opacity: 1 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .pt20-md {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+    .fs2-md {
+        font-size: 2em !important;
+    }
+    .fs15-md {
+        font-size: 1.5em !important;
+    }
+    .fldcr-md {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 992px) {
+    .mt15-lg {
+        margin-top: 15px;
+    }
+    .tol6-lg {
+        -webkit-line-clamp: 6 !important;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        display: -webkit-box;
+    }
+    .fdc-lg {
+        flex-direction: column;
+    }
+    .c-c1-lg {
+        color: $c1 !important;
+    }
+    .dn-lg {
+        display: none;
+    }
+    .bg-c2-lg {
+        background: $c2;
+    }
+    .dn-lg {
+        display: none !important;
+    }
+    .wmn650 {
+        min-width: 650px !important;
+    }
+    .a-a1-rlg {
+        &::after {
+            background: $c1;
+        }
+    }
+    .active-rlg {
+        &::after {
+            background: $c1;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .dn-rlg {
+        display: none !important;
+    }
+    .anbg {
+        background: none !important;
+        box-shadow: none !important;
+    }
+    #menu {
+        transition: .5s;
+    }
+}
+
+@media (min-width: 1200px) {}

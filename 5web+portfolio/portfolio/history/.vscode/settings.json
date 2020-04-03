@@ -1,0 +1,9 @@
+{
+    "files.autoSave": "onFocusChange",
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript"
+    ]
+}
